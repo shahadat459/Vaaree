@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Vaaree Regression Suite" verbose="5" parallel="tests"
+	thread-count="3">
+
+	<test name="Login Page Test">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.qa.vaaree.tests.LoginPageTest" />
+		</classes>
+	</test>
+
+	<test name="Account Page Test">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.qa.vaaree.tests.AccountPageTest" />
+		</classes>
+	</test>
+
+	<test name="Search Test">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.qa.vaaree.tests.SearchTest" />
+		</classes>
+	</test>
+
+	<test name="Search With Excel Data Test">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.qa.vaaree.tests.SearchTestWithExcelData" />
+		</classes>
+	</test>
+
+
+</suite>

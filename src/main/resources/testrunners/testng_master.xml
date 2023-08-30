@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Vaaree Regression Suite" verbose="5" parallel="tests"
+	thread-count="4">
+
+	<test name="Login Page Test_Chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.qa.vaaree.tests.LoginPageTest" />
+		</classes>
+	</test>
+	<test name="Login Page Test_Firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.qa.vaaree.tests.LoginPageTest" />
+		</classes>
+	</test>
+	<test name="Login Page Test_Edge">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="com.qa.vaaree.tests.LoginPageTest" />
+		</classes>
+	</test>
+
+
+	<test name="Account Page Test_Chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.qa.vaaree.tests.AccountPageTest" />
+		</classes>
+	</test>
+	<test name="Account Page Test_Firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.qa.vaaree.tests.AccountPageTest" />
+		</classes>
+	</test>
+	<test name="Account Page Test_Edge">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="com.qa.vaaree.tests.AccountPageTest" />
+		</classes>
+	</test>
+
+	<test name="Search Test_Chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.qa.vaaree.tests.SearchTest" />
+		</classes>
+	</test>
+	<test name="Search Test_Firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.qa.vaaree.tests.SearchTest" />
+		</classes>
+	</test>
+	<test name="Search Test_Edge">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="com.qa.vaaree.tests.SearchTest" />
+		</classes>
+	</test>
+	
+
+	<test name="Search With Excel Data Test_Chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.qa.vaaree.tests.SearchTestWithExcelData" />
+		</classes>
+	</test>
+	<test name="Search With Excel Data Test_Firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.qa.vaaree.tests.SearchTestWithExcelData" />
+		</classes>
+	</test>
+	<test name="Search With Excel Data Test_Edge">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="com.qa.vaaree.tests.SearchTestWithExcelData" />
+		</classes>
+	</test>
+
+
+</suite>
